@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+   "env": {
+    // "browser": true
+    // Añade variables globales del navegador como:
+    // window, document, localStorage, fetch, alert, etc.
+    "browser": true,
+    // "es6": true
+    // Habilita todas las características de ES6/ES2015+ como:
+    // Promise, Map, Set, Symbol, etc.
+    "es6": true,
+    // "node": true
+    // Añade variables globales de Node.js
+    "node": true
+  },
+  "rules": {
+    // Fuerza el uso de === y !== en lugar de == y !=
+    "eqeqeq": ["error", "always"],
+    // Prohíbe tener funciones vacías
+    "no-empty-function": "error",
+    // Variables no utilizadas
+    "no-unused-vars": "warn", 
+    // No importaciones duplicadas
+    "no-duplicate-imports": "error"
+  }
+}
